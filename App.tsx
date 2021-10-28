@@ -5,8 +5,8 @@ import { StyleSheet, Text, View } from 'react-native';
 //   useFonts,
 //   OpenSans_700Bold_Italic,
 // } from '@expo-google-fonts/open-sans';
-import { Theme } from './design/theme/theme';
-import { Title } from './design/ui/title';
+import { Theme } from '@my-org/design.theme.theme';
+import { Title } from '@my-org/design.ui.title';
 
 export default function App() {
   // const [fontsLoaded] = useFonts({

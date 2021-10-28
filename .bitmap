@@ -9,6 +9,12 @@
  */
 
 {
+    "envs/my-react-native": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "design/envs/my-react-native"
+    },
     "theme/theme": {
         "scope": "",
         "version": "",

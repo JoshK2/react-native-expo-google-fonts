@@ -36,10 +36,13 @@
     /**
      * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
      */
-    "packageManager": "teambit.dependencies/pnpm",
+    "packageManager": "teambit.dependencies/yarn",
     "policy": {
       "dependencies": {},
-      "peerDependencies": {}
+      "peerDependencies": {
+        "react": "17.0.1",
+        "react-native": "0.64.2"
+      }
     }
   },
   /**
@@ -57,10 +60,24 @@
       /**
        * uncomment to apply the chosen environment on all components.
        **/
-      "teambit.react/react-native": {}
+      "my-org.design/envs/my-react-native": {}
     },
     "design": {
       "defaultScope": "my-org.design"
+    },
+    "design/envs/my-react-native": {
+      "teambit.react/react-native": "-",
+      "teambit.harmony/aspect": {},
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {
+          "dependencies": {
+            "file-loader": "6.2.0",
+            "react-native-web": "0.17.1",
+            "babel-preset-expo": "8.5.1",
+            "babel-loader": "8.2.3"
+          }
+        }
+      }
     }
   }
 }
